@@ -1,74 +1,50 @@
-# React + TypeScript + Vite
+## Translate & Summarize the Web. Privately.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Use your own Gemini API Key. No middleman. No subscription fees.
+Just a powerful Chrome Extension that connects you directly to AI.
 
-Currently, two official plugins are available:
+Break language barriers and digest online content faster with a lightweight, powerful Chrome extension that connects directly to AI using your own Gemini API key.
+No middlemen. No subscriptions. Just fast, private AI assistance—right in your browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+One-time download: $2
 
-## React Compiler
+### What This Extension Does
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This Chrome extension lets you instantly translate text and summarize entire web pages without leaving the page you’re on. It’s designed for speed, privacy, and simplicity.
 
-## Expanding the ESLint configuration
+### Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔤 Smart Translation
+Translate selected text instantly while preserving formatting, context, and nuance.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🧠 Page Summaries
+Turn long articles into clear, concise bullet-point summaries in seconds. Read less. Know more.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🔐 Your Keys, Your Privacy
+You use your own Gemini API key. It’s stored locally in your browser—never sent, stored, or seen by anyone else.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+⚡ No Subscriptions, No Middleman
+You pay once for the extension and connect directly to Google’s AI. No recurring fees.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# translate-ai-extension
+### Setup in 3 Minutes
+
+- Install the Extension
+- Download and add it to Chrome.
+- Get Your Free API Key
+- Use the provided link to Google AI Studio (free for personal use).
+
+Connect & Go
+Paste your key into the extension settings. It’s saved locally—and you’re ready.
+
+### Perfect For
+
+- Researchers & students
+- Developers & builders
+- Writers & readers
+- Anyone who reads content in multiple languages
+
+
+Simple. Private. Powerful.
+Download now and start translating and summarizing the web—your way.
