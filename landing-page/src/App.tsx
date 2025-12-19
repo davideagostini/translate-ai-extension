@@ -140,7 +140,16 @@ function App() {
                 <Step
                   number="01"
                   title="Install the Extension"
-                  desc="Download and add to Chrome."
+                  desc={
+                    <div className="flex flex-col gap-2 mt-2">
+                      <p>Download and unzip the file.</p>
+                      <div className="bg-white/5 p-3 rounded-md text-xs font-mono text-neutral-400">
+                        1. Go to <span className="text-blue-400">chrome://extensions</span><br />
+                        2. Toggle <span className="text-blue-400 font-bold">Developer Mode</span> (top right)<br />
+                        3. Click <span className="text-blue-400 font-bold">Load Unpacked</span> & select folder
+                      </div>
+                    </div>
+                  }
                 />
                 <Step
                   number="02"
@@ -231,7 +240,7 @@ function FeatureCard({ icon, title, description }: { icon: React.ReactNode, titl
   )
 }
 
-function Step({ number, title, desc }: { number: string, title: string, desc: string }) {
+function Step({ number, title, desc }: { number: string, title: string, desc: React.ReactNode }) {
   return (
     <div className="flex gap-4">
       <div className="font-mono text-xl font-bold text-blue-500/50">{number}</div>
