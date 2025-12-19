@@ -49,7 +49,9 @@ function App() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="#pricing"
+                href="https://davideagostini.gumroad.com/l/msjxtj"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2 group"
               >
                 Download for $2
@@ -72,35 +74,27 @@ function App() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="mt-20 relative mx-auto max-w-4xl"
           >
-            <div className="rounded-xl border border-white/10 bg-neutral-900/50 backdrop-blur-xl shadow-2xl overflow-hidden aspect-[16/9] flex items-center justify-center relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5" />
+            <div className="relative mx-auto max-w-5xl h-[500px] perspective-1000 flex items-center justify-center">
+              <motion.img
+                src="/translate-ai-extension/mockup-summary.png"
+                alt="AI Summary Interface"
+                className="absolute w-[55%] max-w-[450px] z-10 rounded-xl shadow-2xl border border-white/10"
+                initial={{ rotateY: 10, rotateX: 5, x: 200, opacity: 0 }}
+                animate={{ rotateY: -15, rotateX: 5, x: 180, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.2 }}
+                style={{ transformStyle: 'preserve-3d' }}
+              />
+              <motion.img
+                src="/translate-ai-extension/mockup-translation.png"
+                alt="AI Translation Interface"
+                className="absolute w-[60%] max-w-[500px] z-20 rounded-xl shadow-2xl border border-white/10"
+                initial={{ rotateY: -10, rotateX: 5, x: -200, opacity: 0 }}
+                animate={{ rotateY: 15, rotateX: 5, x: -180, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                style={{ transformStyle: 'preserve-3d' }}
+              />
 
-              {/* Simulated Interface */}
-              <div className="relative z-10 p-8 text-left w-full max-w-lg">
-                <div className="bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 p-6 shadow-xl transform transition-transform group-hover:scale-[1.01]">
-                  <div className="flex items-center gap-3 mb-4 border-b border-white/5 pb-4">
-                    <div className="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                      <Sparkles size={16} className="text-blue-400" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold">Translate AI</div>
-                      <div className="text-[10px] text-neutral-500">Summarizing content...</div>
-                    </div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="h-2 bg-white/10 rounded w-3/4 animate-pulse"></div>
-                    <div className="h-2 bg-white/10 rounded w-full animate-pulse delay-75"></div>
-                    <div className="h-2 bg-white/10 rounded w-5/6 animate-pulse delay-150"></div>
-                  </div>
-                  <div className="mt-4 pt-4 border-t border-white/5 flex gap-2">
-                    <div className="h-6 w-20 bg-blue-500/20 rounded text-[10px] flex items-center justify-center text-blue-300 font-medium">English</div>
-                    <div className="h-6 w-20 bg-white/5 rounded text-[10px] flex items-center justify-center text-neutral-400">German</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-blue-600/30 rounded-full blur-[80px]" />
-              <div className="absolute -top-10 -left-10 w-64 h-64 bg-purple-600/30 rounded-full blur-[80px]" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[100px] -z-10" />
             </div>
           </motion.div>
         </div>
@@ -197,9 +191,14 @@ function App() {
               Own the tool, control your data.
             </p>
 
-            <button className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition-colors mb-6">
+            <a
+              href="https://davideagostini.gumroad.com/l/msjxtj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition-colors mb-6 block"
+            >
               Buy Now
-            </button>
+            </a>
 
             <div className="space-y-3 text-left">
               <CheckItem text="Unlimited Translations" />
