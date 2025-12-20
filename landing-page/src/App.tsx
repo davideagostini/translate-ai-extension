@@ -54,7 +54,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition-all hover:scale-105 flex items-center justify-center gap-2 group"
               >
-                Download for $2
+                Download for Free
                 <ChevronRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
               </a>
               <a
@@ -194,9 +194,9 @@ function App() {
             <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none" />
 
             <h3 className="text-xl font-medium text-neutral-300 mb-2">Lifetime Access</h3>
-            <div className="text-5xl font-bold text-white mb-6">$2</div>
+            <div className="text-5xl font-bold text-white mb-6">Free</div>
             <p className="text-neutral-400 mb-8 text-sm">
-              One-time payment. Use forever.<br />
+              No hidden fees. Open source.<br />
               Own the tool, control your data.
             </p>
 
@@ -206,7 +206,7 @@ function App() {
               rel="noopener noreferrer"
               className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold transition-colors mb-6 block"
             >
-              Buy Now
+              Download Now
             </a>
 
             <div className="space-y-3 text-left">
